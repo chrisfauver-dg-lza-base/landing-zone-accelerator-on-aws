@@ -6,6 +6,27 @@ enable: true
 organizationalUnits:
   - name: Security
   - name: Infrastructure
+  - name: Management
+    ignore: true
+  - name: DG-Test
+    ignore: true
+  - name: Fauvernet
+    ignore: true
+  # - name: DG
+  #  ignore: true
+  # - name: Testing
+  #  ignore: true
+  # - name: Production
+  #  ignore: true
+  # - name: DG-LogArchive
+  #  ignore: true
+  # - name: DG-Audit
+  #  ignore: true
+  # - name: Management
+  #  ignore: true 
+  ### - name: Sandbox 
+# Taking out to troubleshoot code
+# serviceControlPolicies: []
 quarantineNewAccounts:
   enable: true
   scpPolicyName: Quarantine

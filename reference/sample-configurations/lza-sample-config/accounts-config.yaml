@@ -4,25 +4,41 @@ mandatoryAccounts:
   # The "name" value DOES NOT need to match the account name
   - name: Management
     description: The management (primary) account. Do not change the name field for this mandatory account. Note, the account name key does not need to match the AWS account name.
-    email: <management-account>@example.com <----- UPDATE EMAIL ADDRESS
+    email: evo_discogoats@uwe.nsa.gov #<----- UPDATE EMAIL ADDRESS
     organizationalUnit: Root
   - name: LogArchive
     description: The log archive account. Do not change the name field for this mandatory account. Note, the account name key does not need to match the AWS account name.
-    email: <log-archive>@example.com  <----- UPDATE EMAIL ADDRESS
+    email: Crfauve+DG-LogArchive-new@uwe.nsa.gov  #<----- UPDATE EMAIL ADDRESS
     organizationalUnit: Security
   - name: Audit
     description: The security audit account (also referred to as the audit account). Do not change the name field for this mandatory account. Note, the account name key does not need to match the AWS account name.
-    email: <audit>@example.com  <----- UPDATE EMAIL ADDRESS
+    email: Crfauve+DG-Audit-new@uwe.nsa.gov  #<----- UPDATE EMAIL ADDRESS
     organizationalUnit: Security
+  #- name: DG-Management
+  #  description: Testing an additional management account that was created.
+  #  email: Crfauve+DG-Management@uwe.nsa.gov #<----- UPDATE EMAIL ADDRESS
+  #  organizationalUnit: Root
+  #- name: DG-Audit
+  #  description: The management (primary) account. Do not change the name field for this mandatory account. Note, the account name key does not need to match the AWS account name.
+  #  email: Crfauve+DG-Audit-new@uwe.nsa.gov #<----- UPDATE EMAIL ADDRESS
+  #  organizationalUnit: Root
+  #- name: DG-LogArchive
+  #  description: The management (primary) account. Do not change the name field for this mandatory account. Note, the account name key does not need to match the AWS account name.
+  #  email: Crfauve+DG-LogArchive@uwe.nsa.gov #<----- UPDATE EMAIL ADDRESS
+  #  organizationalUnit: Root
+  
+        
 workloadAccounts:
   # The "name" will be used to set the AWS Account name
   # The "name" value does not currently support spaces
   # The "name" value DOES NOT need to match the account name
   - name: SharedServices
     description: The SharedServices account
-    email: <shared-services>@example.com  <----- UPDATE EMAIL ADDRESS
+    email: Crfauve+DG-SharedServices@uwe.nsa.gov  #<----- UPDATE EMAIL ADDRESS
     organizationalUnit: Infrastructure
   - name: Network
     description: The Network account
-    email: <network>@example.com  <----- UPDATE EMAIL ADDRESS
+    email: Crfauve+DG-Network@uwe.nsa.gov  #<----- UPDATE EMAIL ADDRESS
     organizationalUnit: Infrastructure
+
+    ###Adding Breadcrumb for testing

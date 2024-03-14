@@ -1,7 +1,7 @@
 homeRegion: &HOME_REGION us-east-1
 enabledRegions:
   - *HOME_REGION
-managementAccountAccessRole: AWSControlTowerExecution
+managementAccountAccessRole: OrganizationAccountAccessRole
 cloudwatchLogRetentionInDays: 3653
 terminationProtection: true
 cdkOptions:
@@ -14,9 +14,9 @@ snsTopics:
   topics:
     - name: Security
       emailAddresses:
-        - <security-notifications>@example.com  <----- UPDATE EMAIL ADDRESS
+        - Crfauve+DG-Security-Notifications@uwe.nsa.gov  #<----- UPDATE EMAIL ADDRESS
 controlTower:
-  enable: true
+  enable: false
 logging:
   account: LogArchive
   cloudtrail:
@@ -138,31 +138,31 @@ reports:
           threshold: 100
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-notifications>@example.com  <----- UPDATE EMAIL ADDRESS
+          address: Crfauve+DG-Budget-Notifications@uwe.nsa.gov  #<----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 90
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-notifications>@example.com  <----- UPDATE EMAIL ADDRESS
+          address: Crfauve+DG-Budget-Notifications@uwe.nsa.gov  #<----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 80
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-notifications>@example.com  <----- UPDATE EMAIL ADDRESS
+          address: Crfauve+DG-Budget-Notifications@uwe.nsa.gov  #<----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 75
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-notifications>@example.com  <----- UPDATE EMAIL ADDRESS
+          address: Crfauve+DG-Budget-Notifications@uwe.nsa.gov  #<----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 50
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-notifications>@example.com  <----- UPDATE EMAIL ADDRESS
+          address: Crfauve+DG-Budget-Notifications@uwe.nsa.gov  #<----- UPDATE EMAIL ADDRESS
 backup:
   vaults:
     - name: BackupVault
